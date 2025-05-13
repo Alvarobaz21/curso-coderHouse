@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  fuenteParaTitulos
+.josefin-sans-<uniquifier> {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+    fuenteParaArticulos
+
+.montserrat-<uniquifier {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+*/
+
+/* paleta de colores
+    #355834 barra de navegacion y footer
+    #6E633D background h1
+    #14281D background body
+*/
+
+/*aqui aplicare las fuentes a los textos*/
+p,article{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+}
+.imgRedes{
+    height: 30px;
+}
+.textoFormulario{
+    font-family: "Josefin Sans", sans-serif;
+}
+li a{
+    font-family: "Josefin Sans", sans-serif;
+}
+/*hasta aqui aplico las fuentes*/
+
+.imagenLogo{
+    width:2.5rem;
+    background-color: #355834;
+    display: flex;
+}
+
+.backgroundBody{
+    background-color:#14281D ;
+}
+
+nav, footer{
+    background-color: #355834;
+}
+/* aqui dare estilo a la barra de navegacion*/
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1rem 1.5625rem;
+}
+nav ul div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 0.5rem;
+}
+nav ul div li{
+    list-style-type: none;
+}
+nav ul li a{
+    padding:1rem;
+    color: white;
+    text-decoration: none;
+} 
+nav ul div li a:hover {
+    background-color: #2f4730;
+}
+
+nav ul div li ul{
+    display: none;
+    position: absolute;
+    background-color: #4e6f4d;
+    z-index: 1;
+}
+nav ul div li:hover > ul {
+    display: block;
+}
+nav ul div li ul li a {
+    padding: 12px 16px;
+}
+
+/*hasta aqui estilare la barra de navegacion*/
+
+
+header{
+    display: flex;
+    display: inline;
+}
+
+/* aqui estilare mi main*/
+
+.seccionPrincipal{
+    width: 100%;
+}
+
+.seccionPrincipal div{
+    display: flex;
+}
+h1{
+    font-size: 1.875rem;
+    padding: .625rem;
+    text-align: center;
+    width: 100%;
+    background-color:#6E633D;
+}
+.seccionPrincipal div img{
+    padding: 2.1875rem;
+}
+.seccionPrincipal div div{
+    display: flex;
+    flex-direction: column;
+}
+.seccionPrincipal div div h2{
+    font-size: 2.875rem;
+    text-align: center;
+    padding: 2.1875rem;
+}
+.seccionPrincipal div div article{
+    font-size:2.2rem;
+}
+.seccionDos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.seccionDos h2{
+    font-size: 2.2rem;
+    align-items: center;
+}
+.seccionDos img{
+    width: 50%; ;
+    padding: 2.1875rem;
+}
+.seccionDos ul li a{
+    color: white;
+    padding: .9375rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.seccionDos div{
+    text-align: left;
+    padding-left: 15%;
+}
+
+/* aqui estilare mi footer*/
+
+footer{
+    display: flex;   
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    padding:.5rem;
+}
+.contactoFooter a{
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    text-decoration: none;
+padding: .3125rem;
+}
+.contactoFooter a:hover{
+    background-color: #14281D;
+}
+
+/* aqui estilare mi seccion de la pagina "elapidae" */
+
+.sectionGridsElapidae{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 30% 10% 30% 30%;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+    "article1 img1"
+    "p p"
+    "img2 img2"
+    "article2 img3"
+    ;
+}
+
+.article1{
+    grid-area:article1 ;
+}
+.img1{
+    grid-area: img1;
+}
+.sectionGridsElapidae p{
+    grid-area: p;
+}
+.img2{
+    grid-area: img2;
+}
+.article2{
+    grid-area: article2;
+}
+.img3{
+    grid-area: img3;
+}
+
+
+.sectionGridsElapidae img, article, p{
+    width: 100%;
+    padding: 3%;
+    font-size: 200%;
+    text-align: center;
+}
+
+
+/* aqui estilare mi pagina de contacto*/
+.backgroundContacto{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background-color:rgba(0, 255, 255, 0.452);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    margin: 2rem;
+    border-radius: 5%;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 15.25rem;
+}
+.backgroundContacto{
+    background-image: url(../assets/img/imgParaContacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+    background: linear-gradient(to right, #39b54a, #00a300) color: white;
+    width: 100%;
+    padding: .3125rem;
+    border: none;
+    border-radius:5%;
+}
